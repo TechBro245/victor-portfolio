@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="contact-section py-5">
+    <div class="container">
+
+        <!-- Page heading -->
+        <div class="text-center mb-5">
+            <h1>Get In Touch</h1>
+            <p>
+                Have a project in mind or want to work together?
+                I'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Contact information -->
+            <div class="col-md-5">
+                <div class="bg-dark text-light rounded-4 p-4 h-100">
+
+                    <h3>Let's Talk</h3>
+
+                    <p class="mb-4">
+                        I'm open to opportunities, collaborations
+                        and interesting projects.
+                    </p>
+
+                    <div class="mb-4">
+                        <h6>Email</h6>
+                        <p>your-email@example.com</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h6>Location</h6>
+                        <p>Nigeria</p>
+                    </div>
+
+                    <div>
+                        <h6>Social Media</h6>
+                        <!-- Add your social links here -->
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Contact form -->
+            <div class="col-md-7">
+                <div class="bg-light rounded-4 p-4">
+
+                    <h3 class="mb-4">Send Me a Message</h3>
+
+                    <form>
+
+                        <div class="mb-3">
+                            <label class="form-label">Your Name</label>
+                            <input type="text"
+                                   class="form-control"
+                                   placeholder="Enter your name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="Enter your email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Subject</label>
+                            <input type="text"
+                                   class="form-control"
+                                   placeholder="Message subject">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control"
+                                      rows="5"
+                                      placeholder="Write your message"></textarea>
+                        </div>
+
+                        <button type="submit"
+                                class="btn btn-dark w-100">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

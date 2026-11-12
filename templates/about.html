@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+    <section class="about-section py-5">
+    <div class="container">
+
+        <!-- Section heading -->
+        <div class="text-center mb-5">
+            <h1>About Me</h1>
+            <p>Get to know me and what I do.</p>
+        </div>
+
+        <!-- About content -->
+        <div class="row align-items-center g-4">
+
+            <!-- Image -->
+            <div class="col-md-5">
+                <img
+                    src="{{ url_for('static', filename='images/me5.jpeg') }}"
+                    alt="Victor Chidubem"
+                    class="img-fluid rounded-4"
+                >
+            </div>
+
+            <!-- Introduction -->
+            <div class="col-md-7">
+                <h2>Who I Am</h2>
+
+                <p>
+                    My name is Chukwuemeka Victor Chidubem, a 300-level Computer Science student at Alex Ekwueme Federal University, Ndufu-Alike, Ebonyi State, Nigeria.
+                    I'm passionate about programming and enjoy the process of turning ideas into functional applications through code. My interest in technology initially led me towards cybersecurity, particularly ethical hacking and the protection of digital systems.
+                    As I continue developing my technical skills, I've chosen to focus on web development as a practical way to apply my programming knowledge, solve real-world problems and build a sustainable career in technology.
+                </p>
+
+                <h3>What I Do</h3>
+
+                <p>
+                    I'm focused on developing responsive, functional and user-friendly websites. My interests include business websites, personal websites, portfolio platforms and web applications. I enjoy learning how different technologies work together to transform ideas into useful digital experiences.
+                </p>
+
+                <h3>My Direction</h3>
+                <p>
+                    My Direction My immediate goal is to become a skilled web developer, gain practical experience and build solutions that provide value to individuals and businesses. I also intend to continue exploring cybersecurity as I grow in the technology field.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

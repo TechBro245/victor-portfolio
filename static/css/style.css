@@ -1,0 +1,137 @@
+:root{
+    --background: #7da0ca;
+    --navbar: #021024;
+    --added: #052659;
+    --text: #c1e8ff;
+}
+body{
+    background-color: var(--background);
+}
+
+.navbar{
+    background-color: var(--added) !important;
+}
+.navbar .navbar-brand{
+    color: var(--text);
+}
+.navbar-nav .nav-link{
+    padding: 5px 10px;
+    color: var(--text) !important;
+    gap: 100px !important;
+}
+.navbar-nav .nav-link:hover{
+    transition: 0.2s ease-in-out;
+    background-color: var(--added);
+    border-radius: 12px;    
+    padding: 5px 10px;
+    scale: 1.2;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23c1e8ff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+    border-color: var(--background) !important;
+}
+.navbar-toggler:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px var(--background);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active{
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: var(--background) !important;
+}
+
+.offcanvas{
+    background-color: var(--background);
+}
+
+.hero-section {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-section .row {
+    min-height: 85vh;
+}
+
+.hero-content {
+    padding: 40px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+}
+
+.hero-content p {
+    max-width: 450px;
+    line-height: 1.8;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.Me-img {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 20px;
+    border: 5px solid var(--background);
+}
+
+/* Mobile layout */
+@media (max-width: 767.98px) {
+
+    .hero-section {
+        position: relative;
+        min-height: 85vh;
+        align-items: center;
+        color: white;
+    }
+
+    .hero-section .row {
+        min-height: 85vh;
+    }
+
+    .hero-image {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        padding: 0;
+        z-index: 0;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .hero-image::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        padding: 30px 20px;
+    }
+}

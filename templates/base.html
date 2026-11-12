@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Victor Chidubem</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1"  style="width: 150px;" id="navbarTogglerDemo02" aria-labelledby="navbarTogglerDemo02Label">
+      <!-- <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="navbarTogglerDemo02Label"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div> -->
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('about') }}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('contact') }}" tabindex="-1">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+    
+    {% block content %}{% endblock %}
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container text-center align-items-center">
+
+            <h5>Victor Chidubem</h5>
+
+            <p>
+                Aspiring Web Developer | Computer Science Student
+            </p>
+
+            <div class="mb-3">
+                <a href="{{ url_for('home') }}" class="text-light mx-2">Home</a>
+                <a href="{{ url_for('about') }}" class="text-light mx-2">About</a>
+                <a href="{{ url_for('contact') }}" class="text-light mx-2">Contact</a>
+                <a href="{{ url_for('projects') }}" class="text-light mx-2">Projects</a>
+            </div>
+
+            <hr>
+
+            <p class="mb-0">
+                &copy; 2026 Victor Chidubem. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>
