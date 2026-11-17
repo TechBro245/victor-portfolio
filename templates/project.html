@@ -2,35 +2,97 @@
 {% block title %}My Projects{% endblock %}
 
 {% block content %}
-    <section class="project-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">My Projects</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Description of Project 1.</p>
-                        </div>
+<section class="project-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">My Projects</h2>
+
+        <div class="row">
+
+            <!-- Student Registration System -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+
+                    <img src="{{ url_for('static', filename='images/student-registration.png') }}"
+                         class="card-img-top"
+                         alt="Student Registration System"
+                         style="height: 200px; object-fit: cover;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Student Registration System</h5>
+
+                        <p class="card-text">
+                            A student management web application built with
+                            Python, Flask, SQLAlchemy, SQLite, Bootstrap
+                            and Jinja. Supports student registration,
+                            viewing, editing and deleting student records.
+                        </p>
+
+                        <a href="https://student-registeration-system-xgxp.onrender.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary btn-sm">
+                            Live Demo
+                        </a>
+
+                        <a href="https://github.com/TechBro245/student-registeration-system"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-dark btn-sm">
+                            Source Code
+                        </a>
                     </div>
+
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Description of Project 2.</p>
-                        </div>
+            </div>
+
+            <!-- ChiLucy Fashion Website -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+
+                    <img src="{{ url_for('static', filename='images/chilucy-fashion.png') }}"
+                         class="card-img-top"
+                         alt="ChiLucy Fashion Website"
+                         style="height: 200px; object-fit: cover;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">ChiLucy Fashion Website</h5>
+
+                        <p class="card-text">
+                            A fashion business website built with HTML,
+                            CSS, Bootstrap, Python, Flask and Jinja.
+                            Designed to showcase the business and its
+                            fashion services.
+                        </p>
+
+                        <a href="https://chilucy-fashoion-website.onrender.com"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary btn-sm">
+                            Live Demo
+                        </a>
+
+                        <a href="https://github.com/TechBro245/ChiLucy-Fashoion-website"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-dark btn-sm">
+                            Source Code
+                        </a>
                     </div>
+
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Description of Project 3.</p>
-                        </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Coming soon...</p>
                     </div>
                 </div>
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
 {% endblock %}
